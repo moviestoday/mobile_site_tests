@@ -20,5 +20,5 @@ $(document).ready(function(){
     var color = tinycolor({r:dc[0],g:dc[1],b:dc[2]});
     var contrast = getContrastYIQ(color.toHexString());
     $("#dcolor").css('background-color',color.toHexString());
-    $("#dcolor").css('color',color.lighten(70).toHslString());
+    $("#dcolor").css('color',color.darken(70).toHslString());
 });
